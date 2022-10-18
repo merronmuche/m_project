@@ -31,10 +31,13 @@ for (let idx=0; idx<urls.length; idx++){
 
 
 let panels = document.querySelectorAll('.panel')
+console.log(panels)
+console.log(typeof(panels))
 function removeActiveClasses() {
-    panels.forEach(panel => {
-        panel.classList.remove('active')
-    })
+    
+    for (let i = 0; i<panels.length;i++ ){
+        panels[i].classList.remove('active')
+    }
 }
 
 
